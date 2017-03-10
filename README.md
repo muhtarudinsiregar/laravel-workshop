@@ -14,10 +14,10 @@ Listerner =  Aksi yang akan dilakukan jika event terpanggil.
 * [X] Insert login history when User Login.
 
 ## Step By Step
-1. `laravel new laravel-workshop`
-2. `php artisan make:auth`
-3. Register Event and Listener in App/Providers/EventServiceProvider
-4. Masukkan event dan listener yang kamu buat di variabel `$listen`
+- `laravel new laravel-workshop`
+- `php artisan make:auth`
+- Register Event and Listener in App/Providers/EventServiceProvider
+- Masukkan event dan listener yang kamu buat di variabel `$listen`
 ```php
     protected $listen = [
         'App\Events\UserRegisteredEvent' => [
@@ -25,9 +25,9 @@ Listerner =  Aksi yang akan dilakukan jika event terpanggil.
         ]
     ];
 ```
-5. Kemudian, jalankan command `php artisan event:generate` dan voila, file dibuat secara otomatis.
-6. lalu, isi listener dengan 
-7. untuk memanggil event, dapat menggunakan `event(new \App\Events\UserRegisteredEvent($user))` di controller yang ingin dilakukan aksi.
+- Kemudian, jalankan command `php artisan event:generate` dan voila, file dibuat secara otomatis.
+- lalu, isi listener dengan 
+- untuk memanggil event, dapat menggunakan `event(new \App\Events\UserRegisteredEvent($user))` di controller yang ingin dilakukan aksi.
 
 
 # Note
